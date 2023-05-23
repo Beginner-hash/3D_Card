@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.15s ease-out;
+  border-radius: 20px;
+  mix-blend-mode: hard-light;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(184, 196, 211, 0.7),
+    transparent
+  );
+}
+
+.content-card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.15s ease-out;
+}
+
+.content-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
