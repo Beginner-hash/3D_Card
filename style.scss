@@ -13,11 +13,12 @@ body {
   justify-content: center;
   gap: 100px;
   align-items: center;
-}
-body.gradient-background {
-  background: linear-gradient(152deg, #be4356, #322325, #339cb3, rgba(170, 221, 238, 0.2666666667));
-  background-size: 240% 240%;
-  animation: gradient-animation 24s ease infinite;
+
+  &.gradient-background {
+    background: linear-gradient(152deg, #be4356, #322325, #339cb3, #ade4);
+    background-size: 240% 240%;
+    animation: gradient-animation 24s ease infinite;
+  }
 }
 
 .card {
@@ -35,7 +36,11 @@ body.gradient-background {
   transition: all 0.15s ease-out;
   border-radius: 20px;
   mix-blend-mode: hard-light;
-  background: radial-gradient(circle at 50% 0%, rgba(184, 196, 211, 0.7), transparent);
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(184, 196, 211, 0.7),
+    transparent
+  );
 }
 
 .content-card {
@@ -63,5 +68,3 @@ body.gradient-background {
     background-position: 0% 50%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
